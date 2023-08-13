@@ -24,7 +24,7 @@ html {
 body {
   font-size: 2.4rem;
   font-family: sans-serif;
-  color: #5a3e2b;
+  color: #000;
   font-family: "Quicksand";
   /* font-family: 'Lobster', cursive; */
   /* font-weight: 500; */
@@ -39,7 +39,7 @@ body {
 
 h1 {
   text-align: center;
-  background-color: #f4a226;
+  background-color: #324E7B  ;
   font-family: "Monoton";
   font-size: 8rem;
   text-transform: uppercase;
@@ -50,7 +50,7 @@ h1 {
 }
 
 .add-form {
-  background-color: #e5771f;
+  background-color: #F7608A   ;
   padding: 2.8rem 0;
   display: flex;
   align-items: center;
@@ -66,8 +66,8 @@ h3 {
 button,
 select,
 input {
-  background-color: #ffebb3;
-  color: #5a3e2b;
+  background-color: #60da97;
+  color: #000000  ;
   font-family: inherit;
   border: none;
   border-radius: 10rem;
@@ -79,12 +79,12 @@ input {
 
 .add-form button {
   text-transform: uppercase;
-  background-color: #76c7ad;
+  background-color: #60da97 ;
 }
 
 .list {
-  background-color: #5a3e2b;
-  color: #ffebb3;
+  background-color: #8e5555   ;
+  color: #000e23;
   padding: 4rem 0;
 
   display: flex;
@@ -137,7 +137,7 @@ input[type="checkbox"] {
 }
 
 .stats {
-  background-color: #76c7ad;
+  background-color: #5E88FC  ;
   text-align: center;
   font-weight: 700;
   padding: 3.2rem 0;
