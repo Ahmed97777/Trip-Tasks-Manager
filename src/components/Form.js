@@ -32,7 +32,7 @@ const Form = ({ takeAddItemFunction }) => {
       </select>
       <input
         type="text"
-        placeholder="item..."
+        placeholder="insert an item..."
         value={description}
         onChange={(e) => {
           // console.log(e.target.value);
