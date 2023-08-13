@@ -5,19 +5,27 @@ const Stats = ({ fullList }) => {
   let alreadyPacked = 0;
   let percentage = 0;
 
+  if (!fullListLength) {
+    return (
+      <p className="stats">
+        <em>Start adding some items to your packing list 🔥🚀</em>
+      </p>
+    );
+  }
+
   if (fullListLength > 0) {
     alreadyPacked = fullList.filter((item) => item.packed).length;
     percentage = Math.round((alreadyPacked / fullListLength) * 100);
   }
 
   return (
-    <footer className="stats">
+    <p className="stats">
       <em>
         🎒 You have {fullListLength} items on your list, and you already packed{" "}
         {""}
         {alreadyPacked} {""} ({percentage}%)
       </em>
-    </footer>
+    </p>
   );
 };
 

@@ -49,7 +49,7 @@ const PackingList = ({
       <div className="actions">
         <select value={sortBy} onChange={(e) => setSortBy(e.target.value)}>
           <option value="By Input Order">Sort By Input Order</option>
-          <option value="By Description">Sort By Description</option>
+          <option value="By Description">Sort By Alphabetical</option>
           <option value="By Packed Status">Sort By Packed Status</option>
         </select>
         <button onClick={clearAllItemsFromFullList}>Clear List</button>
