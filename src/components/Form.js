@@ -1,6 +1,12 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 
 const Form = ({ takeAddItemFunction }) => {
+  const inputRef = useRef(null);
+
+  useEffect(() => {
+    inputRef.current.focus();
+  }, []);
+
   const [description, setDescription] = useState("");
   const [quantity, setQuantity] = useState(1);
 
@@ -31,8 +37,9 @@ const Form = ({ takeAddItemFunction }) => {
         ))}
       </select>
       <input
+        ref={inputRef}
         type="text"
-        placeholder="insert an item..."
+        placeholder="insert an item... 👓"
         value={description}
         onChange={(e) => {
           // console.log(e.target.value);
